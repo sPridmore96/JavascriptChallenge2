@@ -1,6 +1,6 @@
 const numberError = "Enter valid numbers"
 
-const checkNumberPositivy = () => {
+const checkNumberPositivty = () => {
 
 let userNumber = document.getElementById('userNumber').value
 
@@ -28,7 +28,7 @@ const handleValueChecker = () => {
     valuesToCheckArray = [inputValue1, inputValue2, inputValue3];
     
     let highest = valuesToCheckArray[0];
-    
+
 valuesToCheckArray.forEach(valueChecker)
     function valueChecker (num) {
         if (num > highest){
