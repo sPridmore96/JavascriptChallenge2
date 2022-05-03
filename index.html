@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <link rel="stylesheet" href="./main.scss">
-    title>JavaScript Challenge 2</title>
+    <title>JavaScript Challenge 2</title>
 </head>
 
 <body>
@@ -14,19 +14,22 @@
 
     <section>
         <h2>A function that shows if a number is a positive or a negative</h2>
-        <input type="number">
+        <input id="userNumber" type="number">
+        <button id="checkPositivityButton" onclick="getElementById('displayPositivityResult').innerHTML = checkNumberPositivy()">Check!</button>
         <P id="displayPositivityResult"></P>
     </section>
     <section>
         <h2>A Function that can convert a number of days into a age</h2>
-        <input type="number">
+        <input id="totalDays" type="number">
+        <button id="calculateAgeButton" onclick="getElementById('displayAge').innerHTML = handleCalculateAge()">Check!</button>
         <p id="displayAge"></p>
     </section>
     <section>
         <h2>A function that will take 3 values and display the highest</h2>
-        <input type="number">
-        <input type="number">
-        <input type="number">
+        <input id="userValue1" type="number">
+        <input id="userValue2" type="number">
+        <input id="userValue3" type="number">
+        <button id="valueCheckButton" onclick="getElementById('displayHighestValue').innerHTML = handleValueChecker()">Check!</button>
         <p id="displayHighestValue"></p>
     </section>
     <section>
@@ -50,6 +53,7 @@
         </select>
         <p id="displayIfPositiveNumberList"></p>
     </section>
+    
 </body>
 
 </html>
