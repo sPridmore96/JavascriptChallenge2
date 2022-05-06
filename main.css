@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@200&family=Libre+Bodoni&display=swap");
+h1 {
+  text-align: center;
+  margin: 3rem;
+  color: #333333;
+  font-family: "Bebas Neue", cursive;
+}
+
+h2 {
+  margin: 1rem;
+  color: #791079;
+  font-family: "Libre Bodoni", serif;
+}
+
+input {
+  padding: 0.5rem;
+  margin: 0.7rem;
+  font-family: "Bebas Neue", cursive;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button {
+  padding: 0.3rem;
+  margin: 1rem 0 1.5rem 0;
+  border-radius: 0.5rem;
+  font-family: "Kanit", sans-serif;
+  background-color: #546e7a;
+  color: #fafafa;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f6f0;
+}
+
+.generalSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 0 3rem 0;
+}

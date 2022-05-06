@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
-    <link rel="stylesheet" href="./main.scss">
+    <link rel="stylesheet" href="./main.css">
     <title>JavaScript Challenge 2</title>
 </head>
 
 <body>
     <h1>JavaScript Challenge 2</h1>
 
-    <section>
+    <section class="generalSection">
         <h2>A function that shows if a number is a positive or a negative</h2>
         <input id="userNumber" type="number">
-        <button id="checkPositivityButton" onclick="getElementById('displayPositivityResult').innerHTML = checkNumberPositivty()">Check!</button>
+        <button id="checkPositivityButton"
+            onclick="getElementById('displayPositivityResult').innerHTML = checkNumberPositivty()">Check!</button>
         <P id="displayPositivityResult"></P>
     </section>
-    <section>
+    <section class="generalSection">
         <h2>A Function that can convert a number of days into a age</h2>
         <input id="totalDays" type="number">
-        <button id="calculateAgeButton" onclick="getElementById('displayAge').innerHTML = handleCalculateAge()">Check!</button>
+        <button id="calculateAgeButton"
+            onclick="getElementById('displayAge').innerHTML = handleCalculateAge()">Check!</button>
         <p id="displayAge"></p>
     </section>
-    <section>
+    <section class="generalSection">
         <h2>A function that will take 3 values and display the highest</h2>
         <input id="userValue1" type="number">
         <input id="userValue2" type="number">
         <input id="userValue3" type="number">
-        <button id="valueCheckButton" onclick="getElementById('displayHighestValue').innerHTML = handleValueChecker()">Check!</button>
+        <button id="valueCheckButton"
+            onclick="getElementById('displayHighestValue').innerHTML = handleValueChecker()">Check!</button>
         <p id="displayHighestValue"></p>
     </section>
-    <section>
+    <section class="generalSection">
         <h2>A function that will show the last name, <br> from a list of names</h2>
-        <h3>Enter your own names...</h3>
         <input id="userName1" type="text">
         <input id="userName2" type="text">
         <input id="userName3" type="text">
         <input id="userName4" type="text">
         <p id="displayCustomLastNames"></p>
-        <button id="getLastNameButton" onclick="getElementById('displayCustomLastNames').innerHTML = getLastNames()">Get the Last names!</button>
+        <button id="getLastNameButton" onclick="getElementById('displayCustomLastNames').innerHTML = getLastNames()">Get
+            the Last names!</button>
     </section>
-    <section>
+    <section class="generalSection">
         <h2>A function to show if a list of numbers are positive</h2>
-        <select id="listOfArrays" onchange="update()">
+        <select id="listOfArrays" onchange="updateListOfArrays()">
             <option value="one">5,7,9,10,15</option>
             <option value="two">-3,5,7,9,16</option>
             <option value="three">7,1,4,8,12</option>
-            <option value="four">-5,7,15,20,25</option>
+            <option value="four">-5,7,-15,-20,25</option>
         </select>
-        <button id="checkListButton" onclick="getElementById('displayPositivityOfList').innerHTML = checkNumberPositivtyOfList()">Check!</button>
+        <button id="checkListButton"
+            onclick="getElementById('displayPositivityOfList').innerHTML = checkNumberPositivtyOfList()">Check!</button>
         <p id="displayPositivityOfList"></p>
     </section>
-    
+
 </body>
 
 </html>
