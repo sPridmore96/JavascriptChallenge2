@@ -44,12 +44,11 @@
     </section>
     <section>
         <h2>A function to show if a list of numbers are positive</h2>
-        <select name="listOfArrays" id="listOfArrays">
-            <option value="1">List 1</option>
-            <option value="2">List 2</option>
-            <option value="3">List 3</option>
-            <option value="4">List 4</option>
-            <option value="5">Custom list</option>
+        <select id="listOfArrays" onchange="update()">
+            <option value="one">5,7,9,10,15</option>
+            <option value="two">-3,5,7,9,16</option>
+            <option value="three">7,1,4,8,12</option>
+            <option value="four">-5,7,15,20,25</option>
         </select>
         <button id="checkListButton" onclick="getElementById('displayPositivityOfList').innerHTML = checkNumberPositivtyOfList()">Check!</button>
         <p id="displayPositivityOfList"></p>

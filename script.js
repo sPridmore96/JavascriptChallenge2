@@ -62,28 +62,32 @@ const getLastNames = () => {
 // a function that takes a list of numbers, will check if all are positive 
 // or if there are any negatives and return a statment to show this
 
+let selectedArray = " ";
 
-const list1 = [5,7,9,10,15];
-const list2 = [3,5,7,9,16];
-const list3 = [7,-1,4,8,12];
-const list4 = [-5,7,15,20,25];
-
-const checkNumberPositivtyOfList = () => {
- 
-    let positivity = true
-
-    list1.some(numberChecker);
-        function numberChecker(num){
-    if (num >= 0){
-        num = true;
-       } else if (num < 0){
-            num = false;
-            positivity = num
-            return positivity
-        }
-    }
-    return positivity;
+function update (){
+    let listOfArrays = document.getElementById('listOfArrays')
+    let selectedArray = listOfArrays.options[listOfArrays.selectedIndex].text;
+    console.log(selectedArray.split(","))    
+    return selectedArray.split(",");
+       
 }
 
+function checkNumberPositivtyOfList(){
+    
+    selectedArray = update();
 
+    let positivity = "positive!";
+    positiveCount = selectedArray.length;
+    negativeCount = 0
 
+    selectedArray.forEach(numberChecker)
+        function numberChecker(num){
+            num * 1
+            if (num < 0){
+            num = "negative";
+            positivity = num
+            return negativeCount ,positivity
+        } 
+    }
+    return `there is number/s in this array that are ${positivity}`
+}
