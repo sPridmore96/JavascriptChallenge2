@@ -15,7 +15,7 @@
 
     <section class="generalSection">
         <h2>A function that shows if a number is a positive or a negative</h2>
-        <input id="userNumber" type="number">
+        <input class="userNumber" type="number">
         <button id="checkPositivityButton"
             onclick="getElementById('displayPositivityResult').innerHTML = checkNumberPositivty()">Check!</button>
         <P id="displayPositivityResult"></P>
@@ -29,15 +29,17 @@
     </section>
     <section class="generalSection">
         <h2>A function that will take 3 values and display the highest</h2>
-        <input id="userValue1" type="number">
-        <input id="userValue2" type="number">
-        <input id="userValue3" type="number">
+        <div class="horizontalInputs">
+            <input id="userValue1" type="number">
+            <input id="userValue2" type="number">
+            <input id="userValue3" type="number">
+        </div>
         <button id="valueCheckButton"
             onclick="getElementById('displayHighestValue').innerHTML = handleValueChecker()">Check!</button>
         <p id="displayHighestValue"></p>
     </section>
     <section class="generalSection">
-        <h2>A function that will show the last name, <br> from a list of names</h2>
+        <h2>A function that will show the last names, <br> from a list of names</h2>
         <input id="userName1" type="text">
         <input id="userName2" type="text">
         <input id="userName3" type="text">
